@@ -1,6 +1,12 @@
 var width = 1400,
   height = 1800;
 
+var div = d3
+  .select("body")
+  .append("div")
+  .attr("class", "tooltip")
+  .style("opacity", 0);
+
 d3.select("svg g")
   .selectAll("circle")
   .data(combined_data)
@@ -9,7 +15,21 @@ d3.select("svg g")
   .attr("r", (d) => d.r)
   .attr("style", (d) => d.style)
   .attr("cx", (d) => d.cx)
-  .attr("cy", (d) => d.cy);
+  .attr("cy", (d) => d.cy)
+  .on("mouseover", (e, d) => {
+    div.transition().duration(200).style("opacity", 0.9);
+    // console.log(d.cy + 500 + "px");
+    div.text("" + d.r);
+
+    // console.log(div.node().getBoundingClientRect());
+
+    div
+      .style("left", d.cx + "px")
+      .style("top", parseFloat(d.cy) + (195 - d.r) + "px");
+  })
+  .on("mouseout", function () {
+    div.transition().duration(500).style("opacity", 0);
+  });
 
 function changeData(x) {
   x.enter()
