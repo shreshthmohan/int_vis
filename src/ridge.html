@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Viz POC - Ridge</title>
+  </head>
+  <body>
+    <div class="min-w-lg max-w-screen-xl mx-auto py-4">
+      <!-- style="background-color: #fbf8f3" -->
+      <div class="p-8">
+        <!-- Header Text -->
+        <div class="max-w-7xl pb-8">
+          <h1 class="font-nunito text-2xl leading-tight text-gray-900">
+            Post-pandemic call volume has reduced to pre-pandemic levels but
+            customer frustration remains high.
+          </h1>
+          <h3 class="font-nunito mt-2 text-xl leading-tight text-gray-600">
+            High customer frustration is driven by 'Servicing' lob.
+          </h3>
+        </div>
+
+        <div class="mx-auto sm:p-6 lg:p-8 border-4 border-dashed rounded-lg">
+          <div class="flex justify-between pb-8">
+            <div class="text-right mt-2.5">
+              <button
+                class="
+                  inline-flex
+                  items-center
+                  px-2
+                  py-1
+                  border border-transparent
+                  text-xs
+                  font-medium
+                  rounded-sm
+                  shadow-sm
+                  text-white
+                  bg-gray-600
+                  hover:bg-gray-700
+                  disabled:bg-gray-300
+                  focus:outline-none
+                  focus:ring-2 focus:ring-offset-2 focus:ring-gray-500
+                  disabled:cursor-not-allowed
+                "
+                type="button"
+                id="split-bubbles"
+                onclick="renderSplit()"
+              >
+                Split
+              </button>
+              <button
+                class="
+                  inline-flex
+                  items-center
+                  px-2
+                  py-1
+                  border border-transparent
+                  text-xs
+                  font-medium
+                  rounded-sm
+                  shadow-sm
+                  text-white
+                  bg-gray-600
+                  hover:bg-gray-700
+                  disabled:bg-gray-300
+                  focus:outline-none
+                  focus:ring-2 focus:ring-offset-2 focus:ring-gray-500
+                  disabled:cursor-not-allowed
+                "
+                type="button"
+                id="combine-bubbles"
+                onclick="renderCombined()"
+              >
+                Combine
+              </button>
+            </div>
+            <div class="flex">
+              <div id="size-legend"></div>
+              <div class="ml-4" id="color-legend"></div>
+            </div>
+          </div>
+
+          <div id="svgcont" class="flex"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/pkg/d3.v6.min.js"></script>
+    <script src="./js/pkg/lodash-4.17.21.min.js"></script>
+    <script src="./js/pkg/moment-2.29.1.min.js"></script>
+    <script src="./js/pkg/alpine-2.8.2.min.js"></script>
+    <script src="./js/pkg/color-legend.js"></script>
+
+    <script src="./js/p1_ridge.js"></script>
+  </body>
+</html>

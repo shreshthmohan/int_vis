@@ -1,0 +1,52 @@
+code,state,fips,Population
+AK,Alaska,2.0,544437.0
+AL,Alabama,1.0,3893328.0
+AR,Arkansas,5.0,2368326.0
+AZ,Arizona,4.0,5963670.0
+CA,California,6.0,31090895.0
+CO,Colorado,8.0,4656603.0
+CT,Connecticut,9.0,2877704.0
+DC,District of Columbia,11.0,584627.0
+DE,Delaware,10.0,798394.0
+FL,Florida,12.0,17798556.0
+GA,Georgia,13.0,8363279.0
+HI,Hawaii,15.0,1081237.0
+IA,Iowa,19.0,2482253.0
+ID,Idaho,16.0,1435471.0
+IL,Illinois,17.0,9920345.0
+IN,Indiana,18.0,5290723.0
+KS,Kansas,20.0,2238102.0
+KY,Kentucky,21.0,3514382.0
+LA,Louisiana,22.0,3575588.0
+MA,Massachusetts,25.0,5642830.0
+MD,Maryland,24.0,4771979.0
+ME,Maine,23.0,1121831.0
+MI,Michigan,26.0,7992326.0
+MN,Minnesota,27.0,4462215.0
+MO,Missouri,29.0,4848368.0
+MS,Mississippi,28.0,2285471.0
+MT,Montana,30.0,869237.0
+NC,North Carolina,37.0,8436538.0
+ND,North Dakota,38.0,586108.0
+NE,Nebraska,31.0,1491592.0
+NH,New Hampshire,33.0,1135005.0
+NJ,New Jersey,34.0,7069143.0
+NM,New Mexico,35.0,1661444.0
+NV,Nevada,32.0,2516212.0
+NY,New York,36.0,15494175.0
+OH,Ohio,39.0,9261370.0
+OK,Oklahoma,40.0,3068933.0
+OR,Oregon,41.0,3463632.0
+PA,Pennsylvania,42.0,10270559.0
+RI,Rhode Island,44.0,863990.0
+SC,South Carolina,45.0,4177471.0
+SD,South Dakota,46.0,683660.0
+TN,Tennessee,47.0,5482241.0
+TX,Texas,48.0,22553742.0
+UT,Utah,49.0,2437966.0
+VA,Virginia,51.0,6744497.0
+VT,Vermont,50.0,518814.0
+WA,Washington,53.0,6151101.0
+WI,Wisconsin,55.0,4667473.0
+WV,West Virginia,54.0,1437940.0
+WY,Wyoming,56.0,456813.0

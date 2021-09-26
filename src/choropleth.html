@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Choropleth Map</title>
+  </head>
+  <body>
+    <div id="container">
+      <svg viewBox="0 0 975 610" height="610" width="975" id="usmap"></svg>
+    </div>
+  </body>
+  <script src="./js/pkg/d3.v6.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"
+    integrity="sha512-4UKI/XKm3xrvJ6pZS5oTRvIQGIzZFoXR71rRBb1y2N+PbwAsKa5tPl2J6WvbEvwN3TxQCm8hMzsl/pO+82iRlg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script defer src="./js/pkg/color-legend.js"></script>
+  <script defer src="./js/choropleth.js"></script>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Packed Bubble</title>
+  </head>
+  <body>
+    <style>
+      div.tooltip {
+        position: absolute;
+        text-align: center;
+        min-width: 60px;
+        height: 28px;
+        /* padding: 2px; */
+        font: 12px sans-serif;
+        background: lightsteelblue;
+        border: 0px;
+        border-radius: 8px;
+        pointer-events: none;
+      }
+    </style>
+    <div class="min-w-lg max-w-screen-lg mx-auto py-4">
+      <div class="py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 class="text-2xl leading-tight text-gray-900">
+            Post-pandemic call volume has reduced to pre-pandemic levels but
+            customer frustration remains high.
+          </h1>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto my-4 px-4 sm:px-6 lg:px-8">
+        <span class="relative z-0 inline-flex shadow-sm rounded-md">
+          <button
+            id="btn-combined"
+            type="button"
+            class="
+              relative
+              inline-flex
+              items-center
+              px-4
+              py-2
+              rounded-l-md
+              border border-gray-300
+              bg-white
+              text-sm
+              font-medium
+              text-gray-700
+              hover:bg-gray-50
+              focus:z-10
+              focus:outline-none
+              focus:ring-1 focus:ring-indigo-500
+              focus:border-indigo-500
+            "
+            onclick="combineData()"
+          >
+            Combined
+          </button>
+          <!-- <button type="button" class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+            Months
+          </button> -->
+          <button
+            id="btn-split"
+            type="button"
+            class="
+              -ml-px
+              relative
+              inline-flex
+              items-center
+              px-4
+              py-2
+              rounded-r-md
+              border border-gray-300
+              bg-white
+              text-sm
+              font-medium
+              text-gray-700
+              hover:bg-gray-50
+              focus:z-10
+              focus:outline-none
+              focus:ring-1 focus:ring-indigo-500
+              focus:border-indigo-500
+            "
+            onclick="splitData()"
+          >
+            Split
+          </button>
+        </span>
+      </div>
+      <div id="content">
+        <svg class="border" width="1400" height="1800">
+          <g transform="translate(0, 200)"></g>
+        </svg>
+      </div>
+    </div>
+
+    <script src="./js/pkg/d3.v6.min.js"></script>
+    <script src="./data/bubble_static.js"></script>
+    <script src="./js/p2_bubble_static.js"></script>
+  </body>
+</html>
